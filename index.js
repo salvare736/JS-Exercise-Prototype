@@ -59,23 +59,23 @@ function Airplane(name) {
    return `${this.name}, ${this.age}`;
  }
  
- const lambdaStudentOne = new Person('Sergio', 32);
- const lambdaStudentTwo = new Person('Jonathan', 32);
- const lambdaStudentThree = new Person('Jordan', 32);
+//  const lambdaStudentOne = new Person('Sergio', 32);
+//  const lambdaStudentTwo = new Person('Jonathan', 32);
+//  const lambdaStudentThree = new Person('Jordan', 32);
 
- console.log(lambdaStudentOne.toString());
- console.log(lambdaStudentTwo.toString());
- console.log(lambdaStudentThree.toString());
+//  console.log(lambdaStudentOne.toString());
+//  console.log(lambdaStudentTwo.toString());
+//  console.log(lambdaStudentThree.toString());
 
- lambdaStudentThree.eat('fish');
- lambdaStudentThree.eat('potato');
- lambdaStudentThree.eat('lemon');
+//  lambdaStudentThree.eat('fish');
+//  lambdaStudentThree.eat('potato');
+//  lambdaStudentThree.eat('lemon');
 
- console.log(lambdaStudentThree.stomach);
+//  console.log(lambdaStudentThree.stomach);
 
- lambdaStudentThree.poop();
+//  lambdaStudentThree.poop();
  
- console.log(lambdaStudentThree.stomach);
+//  console.log(lambdaStudentThree.stomach);
 
   /*
     TASK 2
@@ -91,10 +91,23 @@ function Airplane(name) {
           + The `drive` method should return a string "I ran out of fuel at x miles!" x being `odometer`.
   */
   
- function Car() {
-    
+ function Car(model, milesPerGallon) {
+    this.model = model;
+    this.milesPerGallon = milesPerGallon;
+    this.tank = 0;
+    this.odometer = 0;
   }
-  
+
+  Car.prototype.fill = function(gallons){
+    this.tank = this.tank + gallons;
+  }
+
+  // const car1 = new Car('Toyota', 30);
+
+  // car1.fill(15);
+  // car1.fill(7);
+
+  // console.log(car1.tank);
   
   /*
     TASK 3
