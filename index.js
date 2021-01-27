@@ -143,10 +143,10 @@ function Airplane(name) {
   /* 
     TASK 4
     In your own words explain the four principles for the "this" keyword below:
-    1. 
-    2. 
-    3. 
-    4. 
+    1. In window binding, the 'this' keyword refers to the topmost layer, or the global binding. Window binding doesn't have much practical use for coding purposes, to my knowledge.
+    2. In implicit binding, the 'this' keyword is used in the calling of a function, and it refers to what is left of the dot. Implicit binding is the most common usage of 'this'.
+    3. In explicit binding, the 'this' keyword is used in the context of a 'call' or 'apply' method, and it refers directly to what you stipulate when you run said method.
+    4. In new binding, the 'this' keyword is used in a constructor function, and it refers to the instanced object that is to be created by said constructor function.
   */
   
   
