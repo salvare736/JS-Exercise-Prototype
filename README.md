@@ -23,6 +23,7 @@ In order to complete these tasks you will need your newly aquired knowledge of c
   1. Run tests by typing `npm run test:watch`.
   1. Work on your branch, push commits and create PR as usual.
   1. Make sure to commit often!!
+    [x]
 
   <img alt='instructions VSCode' src='./instructionsVScode.png'>
 
